@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 5: Métodos de Ordenamiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul class="dropdown">
+                        <li><a href="unidad1.html">Unidad 1</a></li>
+                        <li><a href="unidad2.html">Unidad 2</a></li>
+                        <li><a href="unidad3.html">Unidad 3</a></li>
+                        <li><a href="unidad4.html">Unidad 4</a></li>
+                        <li><a href="unidad5.html">Unidad 5</a></li>
+                        <li><a href="unidad6.html">Unidad 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>UNIDAD 5: Métodos de Ordenamiento</h1>
+        <section class="recuadro">
+            <h2>5.1 Algoritmos de Ordenamiento Interno</h2>
+            <h3>5.1.1 Burbuja (Bubble Sort)</h3>
+            <p>El algoritmo de burbuja es uno de los métodos de ordenamiento más sencillos. Su funcionamiento consiste en recorrer repetidamente la lista y comparar pares de elementos adyacentes, intercambiándolos si están en el orden incorrecto. Este proceso se repite hasta que no se necesitan más intercambios, lo que indica que la lista está ordenada.</p>
+        </section>
+        <section class="recuadro">
+            <h3>5.1.2 Quicksort (Ordenamiento Rápido)</h3>
+            <p>Quicksort es un algoritmo de ordenamiento eficiente basado en el principio de divide y vencerás. Elige un "pivote" de la lista y divide los demás elementos en dos sublistas: los que son menores que el pivote y los que son mayores. Luego, aplica recursivamente el mismo proceso a estas sublistas. Finalmente, concatena las sublistas ordenadas con el pivote en el medio.</p>
+        </section>
+        <section class="recuadro">
+            <h3>5.1.3 ShellSort</h3>
+            <p>ShellSort es una mejora del algoritmo de inserción directa. Su idea principal es ordenar elementos que están distantes entre sí, utilizando intervalos (también conocidos como "gaps"). Estos intervalos se van reduciendo progresivamente hasta que finalmente se aplica un ordenamiento por inserción cuando los elementos están suficientemente cerca unos de otros.</p>
+        </section>
+        <section class="recuadro">
+            <h3>5.1.4 Radix Sort</h3>
+            <p>El ordenamiento por radix (Radix Sort) es un algoritmo no comparativo que ordena los elementos de acuerdo con los dígitos o bits de sus valores, comenzando desde el menos significativo hasta el más significativo. Este algoritmo es útil para ordenar grandes cantidades de números enteros o cadenas de caracteres de longitud fija.</p>
+        </section>
+        <section class="recuadro">
+            <h2>5.2 Algoritmos de Ordenamiento Externos</h2>
+            <h3>5.2.1 Algoritmo de Intercalación (Merge Sort)</h3>
+            <p>El algoritmo de intercalación, también conocido como Merge Sort, es otro algoritmo basado en la estrategia de divide y vencerás. Divide la lista en dos mitades, ordena recursivamente ambas mitades, y luego las fusiona de manera ordenada. Es muy eficiente para ordenar grandes volúmenes de datos que no caben en memoria principal.</p>
+        </section>
+        <section class="recuadro">
+            <h3>5.2.2 Mezcla Directa (Direct Merge)</h3>
+            <p>La mezcla directa se refiere a la técnica de fusionar dos listas de manera eficiente, sin necesidad de dividir repetidamente como en Merge Sort. Esta técnica se usa cuando ya se tiene una lista parcialmente ordenada y solo se requiere un paso adicional de fusión para completarla.</p>
+        </section>
+        <section class="recuadro">
+            <h3>5.2.3 Mezcla Natural (Natural Merge Sort)</h3>
+            <p>Este algoritmo también es una variante del Merge Sort, pero aprovecha las subsecuencias ordenadas de la lista original para reducir el número de pasos necesarios. Identifica "corridas" o secuencias ordenadas y las fusiona de forma eficiente.</p>
+        </section>
+       
+        <section class="recuadro">
+            <h2>Ejemplo</h2>
+            <img src="imagen24.jpg" alt="Ejemplo 2">
+            <img src="imagen25.jpg" alt="Ejemplo 2">
+            <img src="imagen26.jpg" alt="Ejemplo 2">
+            <img src="Imagen27.jpg" alt="Ejemplo 2">
+        </section>
+        <section class="recuadro">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5wJYSbRMuV0?si=WT1eVY3EafX-k72F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </section>
+    </main>
+</body>
+</html>

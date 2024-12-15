@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 4: Estructuras No Lineales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul class="dropdown">
+                        <li><a href="unidad1.html">Unidad 1</a></li>
+                        <li><a href="unidad2.html">Unidad 2</a></li>
+                        <li><a href="unidad3.html">Unidad 3</a></li>
+                        <li><a href="unidad4.html">Unidad 4</a></li>
+                        <li><a href="unidad5.html">Unidad 5</a></li>
+                        <li><a href="unidad6.html">Unidad 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>UNIDAD 4: Estructuras No Lineales</h1>
+        <section class="recuadro">
+            <h2>4.1 Árboles (Trees)</h2>
+            <h3>4.1.1 Clasificación de Árboles</h3>
+            <p>Los árboles son estructuras de datos jerárquicas que se utilizan para representar relaciones entre nodos, donde cada nodo tiene un único nodo padre (excepto el nodo raíz) y puede tener varios hijos. Los tipos más comunes de árboles incluyen:</p>
+            <ul>
+                <li><strong>Árbol Binario:</strong> Es un árbol en el que cada nodo tiene como máximo dos hijos. Es la base para muchas estructuras de datos y algoritmos, como las búsquedas binarias.</li>
+                <li><strong>Árbol de Búsqueda Binaria (BST):</strong> Este tipo de árbol binario tiene la propiedad de que, para cada nodo, todos los valores en el subárbol izquierdo son menores, y todos los valores en el subárbol derecho son mayores. Esto permite realizar búsquedas, inserciones y eliminaciones en tiempo logarítmico.</li>
+                <li><strong>Árbol AVL:</strong> Es un tipo de árbol binario de búsqueda autobalanceado. Se asegura de que la diferencia de altura entre los subárboles izquierdo y derecho no sea mayor que 1, lo que mantiene el árbol equilibrado y garantiza una búsqueda eficiente.</li>
+                <li><strong>Árbol N-ario:</strong> A diferencia de los árboles binarios, los árboles N-arios permiten que cada nodo tenga hasta "N" hijos. Son útiles en aplicaciones como la representación de directorios en un sistema de archivos.</li>
+                <li><strong>Árboles de Expresión:</strong> Son utilizados en la representación de expresiones algebraicas y aritméticas. Cada nodo es un operador y sus hijos son los operandos de la operación.</li>
+                <li><strong>Árbol Rojo-Negro y Árbol Splay:</strong> Son ejemplos de árboles balanceados que garantizan un tiempo de acceso eficiente para la búsqueda, inserción y eliminación de nodos.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>4.1.2 Operaciones Básicas sobre Árboles</h3>
+            <p>Las operaciones básicas en los árboles incluyen:</p>
+            <ul>
+                <li>Inserción: Agregar un nuevo nodo en el lugar correspondiente dentro del árbol, respetando las reglas de la estructura (por ejemplo, el orden en un BST).</li>
+                <li>Eliminación: Eliminar un nodo de un árbol, asegurándose de que la estructura del árbol se mantenga consistente. En los árboles binarios de búsqueda, la eliminación puede requerir la reestructuración del árbol.</li>
+                <li>Búsqueda: Localizar un nodo específico dentro del árbol. En los árboles binarios de búsqueda, este proceso es rápido debido a su estructura ordenada.</li>
+                <li>Recorridos:
+                    <ul>
+                        <li><strong>Preorden:</strong> Primero visita la raíz, luego los subárboles izquierdo y derecho.</li>
+                        <li><strong>Inorden:</strong> Visita el subárbol izquierdo, luego la raíz y luego el subárbol derecho. Es utilizado en árboles binarios de búsqueda para obtener los nodos en orden ascendente.</li>
+                        <li><strong>Postorden:</strong> Visita los subárboles antes de la raíz.</li>
+                        <li><strong>Por niveles (Nivel a nivel):</strong> Es un recorrido que visita todos los nodos de un nivel antes de pasar al siguiente, útil para representar árboles en estructura de pila o cola.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>4.1.3 Aplicaciones de los Árboles</h3>
+            <p>Los árboles tienen muchas aplicaciones importantes en la informática y la programación. Algunos de sus usos incluyen:</p>
+            <ul>
+                <li><strong>Sistemas de Archivos:</strong> Los sistemas de archivos de las computadoras están organizados como un árbol. Los directorios y subdirectorios representan los nodos del árbol, permitiendo una navegación eficiente y una jerarquización lógica de los archivos.</li>
+                <li><strong>Árboles de Decisión:</strong> Se utilizan en la inteligencia artificial y el aprendizaje automático. Un árbol de decisión es un modelo que ayuda a tomar decisiones basadas en ciertas reglas. Cada nodo representa una prueba sobre un atributo, y cada rama representa un resultado de esa prueba.</li>
+                <li><strong>Representación de Expresiones Matemáticas:</strong> Los árboles se usan para representar expresiones aritméticas. En este caso, cada nodo es un operador y sus hijos son los operandos. Esto es útil en compiladores y en la evaluación de expresiones complejas.</li>
+                <li><strong>Búsqueda y Ordenación:</strong> Los árboles binarios de búsqueda son eficientes para realizar búsquedas y ordenar datos. Permiten realizar operaciones como insertar, eliminar y buscar elementos con complejidad logarítmica, lo que mejora significativamente el rendimiento en comparación con las listas no ordenadas.</li>
+                <li><strong>Compiladores:</strong> Los compiladores utilizan árboles sintácticos abstractos para representar la estructura gramatical de un programa. Esto les permite analizar y generar el código que se ejecutará en la máquina.</li>
+                <li><strong>Juegos:</strong> En los juegos de estrategia, como el ajedrez, los árboles de búsqueda se utilizan para modelar los posibles movimientos y evaluar el mejor movimiento según un algoritmo de minimax.</li>
+                <li><strong>Base de Datos:</strong> Los árboles B y B+ se utilizan en sistemas de bases de datos para indexar grandes cantidades de datos, permitiendo una búsqueda rápida y eficiente.</li>
+                <li><strong>Compresión de Datos:</strong> Los árboles de Huffman son ampliamente utilizados en algoritmos de compresión como los que se emplean en formatos de archivo como ZIP y JPEG. La idea es asignar códigos más cortos a los elementos más frecuentes para reducir el tamaño total del archivo.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>4.2 Grafos (Graphs)</h2>
+            <h3>4.2.1 Representación de Grafos</h3>
+            <p>Un grafo es una estructura compuesta por nodos (vértices) conectados por aristas (edges). Existen diferentes tipos de grafos según su estructura y el tipo de relación que representan:</p>
+            <ul>
+                <li><strong>Dirigido (DAG):</strong> En estos grafos, las aristas tienen una dirección, es decir, van de un nodo a otro. Son útiles para representar dependencias y relaciones de causa y efecto.</li>
+                <li><strong>No dirigido:</strong> En estos, las aristas no tienen una dirección específica, lo que significa que la relación es bidireccional.</li>
+                <li><strong>Ponderado:</strong> Las aristas tienen un peso, que puede representar costos, distancias, tiempos de espera, etc.</li>
+                <li><strong>No ponderado:</strong> Las aristas no tienen peso, simplemente indican la existencia de una conexión entre los nodos.</li>
+            </ul>
+            <p>Los grafos se representan generalmente de dos maneras:</p>
+            <ul>
+                <li><strong>Matriz de adyacencia:</strong> Una matriz de tamaño \( n \times n \) que indica si dos nodos están conectados o no.</li>
+                <li><strong>Lista de adyacencia:</strong> Cada nodo tiene una lista de otros nodos a los que está directamente conectado, lo que es más eficiente en términos de memoria cuando los grafos son dispersos.</li>
+            </section>
+            <section class="recuadro">
+                <h2>Ejemplo</h2>
+                <img src="imagen18.jpg" alt="Ejemplo 2">
+                <img src="imagen19.jpg" alt="Ejemplo 2">
+                <img src="imagen20.jpg" alt="Ejemplo 2">
+                <img src="Imagen21.jpg" alt="Ejemplo 2">
+                <img src="imagen22.jpg" alt="Ejemplo 1">
+                <img src="imagen23.jpg" alt="Ejemplo 2">
+            </section>
+            <section class="recuadro">
+                <h2>Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/22AE6WklXBg?si=0EA5lKpcsYthGNgP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </main>
+    </body>
+    </html>
+    

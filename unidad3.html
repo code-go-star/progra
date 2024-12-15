@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3: Estructuras Lineales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul class="dropdown">
+                        <li><a href="unidad1.html">Unidad 1</a></li>
+                        <li><a href="unidad2.html">Unidad 2</a></li>
+                        <li><a href="unidad3.html">Unidad 3</a></li>
+                        <li><a href="unidad4.html">Unidad 4</a></li>
+                        <li><a href="unidad5.html">Unidad 5</a></li>
+                        <li><a href="unidad6.html">Unidad 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>UNIDAD 3: Estructuras Lineales</h1>
+        <section class="recuadro">
+            <h2>3.1 Pilas (Stacks)</h2>
+            <h3>3.1.1 Representación en Memoria</h3>
+            <p>Una pila se representa en memoria de manera secuencial, ya sea utilizando un array o una lista enlazada.</p>
+            <ul>
+                <li><strong>Con Arrays:</strong> Los elementos se almacenan de forma contigua, y el índice de la cima o top de la pila se ajusta dinámicamente con las operaciones push (agregar) y pop (retirar). El espacio de memoria es fijo y la estructura necesita una gestión del tamaño.</li>
+                <li><strong>Con Listas Enlazadas:</strong> Cada elemento (nodo) de la lista contiene un valor y una referencia (o puntero) al siguiente nodo. El último nodo de la lista (el tope de la pila) se considera el elemento más reciente.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.1.2 Operaciones Básicas</h3>
+            <p>Las operaciones en una pila están centradas en el acceso y manipulación de los elementos en la cima:</p>
+            <ul>
+                <li>Push: Agrega un elemento al tope de la pila.</li>
+                <li>Pop: Elimina y retorna el elemento del tope de la pila.</li>
+                <li>Peek (o Top): Devuelve el valor del elemento superior sin modificar la pila.</li>
+                <li>isEmpty: Verifica si la pila está vacía.</li>
+                <li>isFull (en el caso de un array): Verifica si la pila ha alcanzado su capacidad máxima.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.1.3 Aplicaciones</h3>
+            <p>Las pilas tienen varias aplicaciones útiles en programación:</p>
+            <ul>
+                <li>Manejo de funciones recursivas: Cada llamada recursiva se apila en el stack del sistema, permitiendo el regreso a la ejecución previa.</li>
+                <li>Evaluación de expresiones: Se utilizan pilas para convertir y evaluar expresiones matemáticas en notación postfija.</li>
+                <li>Historial de navegación web: Los navegadores utilizan pilas para mantener el historial de páginas visitadas, permitiendo la opción de "volver atrás".</li>
+                <li>Deshacer operaciones en software: Muchos editores y herramientas permiten deshacer acciones utilizando pilas para almacenar las modificaciones realizadas.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>3.2 Colas (Queues)</h2>
+            <h3>3.2.1 Representación en Memoria</h3>
+            <p>Las colas también pueden implementarse utilizando un array o una lista enlazada:</p>
+            <ul>
+                <li><strong>Con Array Circular:</strong> La representación circular evita la fragmentación al utilizar el espacio de memoria de manera eficiente, permitiendo que el último elemento apunte al primero cuando se alcanza el final del array.</li>
+                <li><strong>Con Lista Enlazada:</strong> Cada nodo tiene una referencia al siguiente nodo, con un puntero al primer y al último nodo de la cola. Las operaciones de inserción y eliminación se realizan en ambos extremos.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.2.2 Operaciones Básicas</h3>
+            <p>Las operaciones fundamentales en una cola son:</p>
+            <ul>
+                <li>Enqueue: Agrega un elemento al final de la cola.</li>
+                <li>Dequeue: Elimina el primer elemento de la cola.</li>
+                <li>Front: Devuelve el elemento al frente sin eliminarlo.</li>
+                <li>isEmpty: Verifica si la cola está vacía.</li>
+                <li>isFull: Verifica si la cola ha alcanzado su capacidad máxima.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.2.3 Tipos de Colas</h3>
+            <p>Existen varias variaciones de colas que se utilizan según el tipo de requerimiento:</p>
+            <ul>
+                <li><strong>Cola Simple:</strong> Sigue el principio FIFO (First In, First Out), es decir, el primer elemento insertado será el primero en salir.</li>
+                <li><strong>Cola Circular:</strong> La cola se organiza de tal forma que, cuando el final de la cola alcanza el último espacio, vuelve a comenzar en el inicio, haciendo un uso más eficiente de la memoria.</li>
+                <li><strong>Cola de Prioridad:</strong> Los elementos de la cola tienen diferentes niveles de prioridad; los de mayor prioridad se sirven primero.</li>
+                <li><strong>Deque (Double-Ended Queue):</strong> Permite la inserción y eliminación de elementos desde ambos extremos, tanto desde el frente como desde el final de la cola.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.2.4 Aplicaciones</h3>
+            <p>Las colas tienen aplicaciones esenciales:</p>
+            <ul>
+                <li>Manejo de procesos en sistemas operativos: Planificación de tareas en un sistema operativo, donde los procesos se gestionan en una cola.</li>
+                <li>Simulación de sistemas de espera: Como en sistemas de atención al cliente o en los servidores de impresión, donde las tareas se procesan en el orden en que llegan.</li>
+                <li>Búsqueda en amplitud (BFS): En algoritmos de búsqueda de grafos, se utiliza una cola para explorar los nodos en orden de cercanía.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>3.3 Listas (Linked Lists)</h2>
+            <h3>3.3.1 Operaciones Básicas</h3>
+            <p>Las listas enlazadas son estructuras dinámicas que permiten insertar o eliminar elementos de manera eficiente:</p>
+            <ul>
+                <li>Inserción: Se puede insertar un nuevo nodo al principio, al final o en cualquier posición intermedia de la lista.</li>
+                <li>Eliminación: Retirar un nodo de cualquier lugar de la lista.</li>
+                <li>Recorrido: Acceder a cada uno de los elementos de la lista, nodo por nodo.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.3.2 Tipos de Listas</h3>
+            <p>Existen diferentes tipos de listas enlazadas, según las necesidades del problema:</p>
+            <ul>
+                <li><strong>Lista Simplemente Enlazada:</strong> Cada nodo contiene un puntero al siguiente nodo, permitiendo recorrerla en una sola dirección.</li>
+                <li><strong>Lista Doblemente Enlazada:</strong> Los nodos contienen dos punteros: uno al siguiente nodo y otro al nodo anterior, lo que facilita el recorrido en ambas direcciones.</li>
+                <li><strong>Lista Circular:</strong> El último nodo apunta de nuevo al primer nodo, formando un ciclo.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h3>3.3.3 Aplicaciones</h3>
+            <p>Las listas enlazadas tienen varias aplicaciones útiles:</p>
+            <ul>
+                <li>Gestión de Memoria: Son útiles para estructuras de datos donde el tamaño cambia constantemente y no se requiere espacio contiguo.</li>
+                <li>Sistemas de Música: Para la representación de listas de reproducción donde los elementos pueden ser fácilmente insertados o eliminados en cualquier lugar.</li>
+                <li>Representación de Polinomios: Las listas pueden usarse para representar términos de un polinomio, donde cada nodo contiene el coeficiente y el exponente.</li>
+            </section>
+                <section class="recuadro">
+                    <h2>Ejemplo</h2>
+                   
+                    <img src="imagen7.jpg" alt="Ejemplo 2">
+                    <img src="imagen8.jpg" alt="Ejemplo 2">
+                    <img src="imagen9.jpg" alt="Ejemplo 2">
+                    <img src="imagen10.jpg" alt="Ejemplo 2">
+                    <img src="imagen11.jpg" alt="Ejemplo 2">
+                    <img src="imagen12.jpg" alt="Ejemplo 2">
+                    <img src="imagen13.jpg" alt="Ejemplo 2">
+                    <img src="imagen14.jpg" alt="Ejemplo 2">
+                    <img src="imagen15.jpg" alt="Ejemplo 2">
+                    <img src="imagen16.jpg" alt="Ejemplo 1">
+                    <img src="imagen17.jpg" alt="Ejemplo 2">
+                </section>
+                <section class="recuadro">
+                    <h2>Video</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bdBf4cX9yao?si=FOQJ2_AZ0T6b_rHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </main>
+        </body>
+        </html>
+        

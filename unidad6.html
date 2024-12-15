@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 6: Métodos de Búsqueda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul class="dropdown">
+                        <li><a href="unidad1.html">Unidad 1</a></li>
+                        <li><a href="unidad2.html">Unidad 2</a></li>
+                        <li><a href="unidad3.html">Unidad 3</a></li>
+                        <li><a href="unidad4.html">Unidad 4</a></li>
+                        <li><a href="unidad5.html">Unidad 5</a></li>
+                        <li><a href="unidad6.html">Unidad 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>UNIDAD 6: Métodos de Búsqueda</h1>
+        <section class="recuadro">
+            <h2>6.1 Búsqueda Secuencial</h2>
+            <p>La búsqueda secuencial es el algoritmo más básico para encontrar un elemento en una lista. Este método recorre la lista desde el principio hasta el final, comparando cada elemento con el que estamos buscando. Si encuentra una coincidencia, devuelve la posición del elemento; si no lo encuentra, termina después de revisar todos los elementos.</p>
+            <h3>Funcionamiento:</h3>
+            <ol>
+                <li>Comienza en el primer elemento de la lista.</li>
+                <li>Compara el elemento actual con el valor buscado.</li>
+                <li>Si los valores coinciden, se retorna la posición del elemento.</li>
+                <li>Si no, se pasa al siguiente elemento.</li>
+                <li>Se repite hasta encontrar el valor o llegar al final de la lista.</li>
+            </ol>
+            <h3>Ventajas:</h3>
+            <ul>
+                <li>Sencillo de implementar.</li>
+                <li>No requiere que la lista esté ordenada.</li>
+            </ul>
+            <h3>Desventajas:</h3>
+            <ul>
+                <li>Ineficiente para listas grandes, ya que su complejidad es \(O(n)\), lo que significa que en el peor de los casos, se tiene que recorrer toda la lista.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>6.2 Búsqueda Binaria</h2>
+            <p>La búsqueda binaria es un algoritmo mucho más eficiente que la búsqueda secuencial, pero requiere que la lista esté ordenada. Este algoritmo divide la lista en dos mitades, comparando el valor buscado con el valor en el medio. Dependiendo de si el valor buscado es mayor o menor, se descarta una de las mitades y se repite el proceso en la otra mitad.</p>
+            <h3>Funcionamiento:</h3>
+            <ol>
+                <li>Comienza con el elemento en el centro de la lista.</li>
+                <li>Si el valor buscado es igual al valor central, se retorna la posición.</li>
+                <li>Si el valor es menor, el algoritmo se aplica recursivamente en la mitad inferior de la lista.</li>
+                <li>Si el valor es mayor, se aplica en la mitad superior de la lista.</li>
+                <li>El proceso continúa hasta encontrar el elemento o reducir la lista a cero elementos.</li>
+            </ol>
+            <h3>Ventajas:</h3>
+            <ul>
+                <li>Mucho más eficiente que la búsqueda secuencial.</li>
+                <li>Utilizado comúnmente en listas ordenadas.</li>
+            </ul>
+            <h3>Desventajas:</h3>
+            <ul>
+                <li>Solo funciona en listas ordenadas.</li>
+                <li>Requiere que la lista esté previamente ordenada, lo cual puede ser costoso si los datos cambian frecuentemente.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>6.3 Búsqueda con Tablas de Hash</h2>
+            <p>Las tablas de hash son estructuras de datos que permiten realizar búsquedas rápidas. Usan una función hash para mapear claves a índices en un array, lo que permite obtener el valor asociado a una clave en tiempo constante en promedio. Sin embargo, esto depende de cómo se manejen las colisiones (cuando diferentes claves se mapean al mismo índice).</p>
+            <h3>Funcionamiento:</h3>
+            <ol>
+                <li>La clave se pasa a través de una función hash, que genera un índice en la tabla.</li>
+                <li>Se accede al índice y se obtiene el valor correspondiente.</li>
+                <li>Si varias claves se mapean al mismo índice, se usa un mecanismo para manejar la colisión, como listas encadenadas o direccionamiento abierto.</li>
+            </ol>
+            <h3>Ventajas:</h3>
+            <ul>
+                <li>Acceso en tiempo constante para las búsquedas promedio.</li>
+                <li>Muy eficiente cuando se tienen grandes volúmenes de datos.</li>
+            </ul>
+            <h3>Desventajas:</h3>
+            <ul>
+                <li>La eficiencia puede disminuir en caso de muchas colisiones.</li>
+                <li>Requiere un buen diseño de la función hash para minimizar las colisiones.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>Ejemplo</h2>
+            <img src="imagen28.jpg" alt="Ejemplo 2">
+            <img src="Imagen29.png" alt="Ejemplo 2">
+            <img src="imagen30.jpg" alt="Ejemplo 2">
+            <img src="Imagen31.jpg" alt="Ejemplo 2">
+        </section>
+        <section class="recuadro">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dv8g-4vPglY?si=7fou5-ityUgKiDez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+</body>
+</html>
+
+   

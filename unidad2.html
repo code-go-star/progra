@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2: Recursividad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Unidades</a>
+                    <ul class="dropdown">
+                        <li><a href="unidad1.html">Unidad 1</a></li>
+                        <li><a href="unidad2.html">Unidad 2</a></li>
+                        <li><a href="unidad3.html">Unidad 3</a></li>
+                        <li><a href="unidad4.html">Unidad 4</a></li>
+                        <li><a href="unidad5.html">Unidad 5</a></li>
+                        <li><a href="unidad6.html">Unidad 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>UNIDAD 2: Recursividad</h1>
+        <section class="recuadro">
+            <h2>2.1 Definición</h2>
+            <p>La recursividad es una técnica de programación en la que una función se llama a sí misma para resolver problemas. Es una herramienta poderosa que permite descomponer un problema grande en subproblemas más pequeños, siguiendo un enfoque de división y conquista. Una función recursiva consta de los siguientes componentes:</p>
+            <ul>
+                <li><strong>Caso base:</strong> Es la condición que detiene la recursión, evitando que la función continúe llamándose indefinidamente. Este paso garantiza la terminación del algoritmo.</li>
+                <li><strong>Caso recursivo:</strong> Representa la lógica que descompone el problema original en una versión más simple, acercándose al caso base en cada paso.</li>
+            </ul>
+            <p>Por ejemplo, en la recursividad para calcular el factorial de un número \( n! \), el caso base es cuando \( n = 0 \) o \( n = 1 \) (donde el resultado es 1), y el caso recursivo implica multiplicar \( n \) por el factorial de \( n-1 \).</p>
+        </section>
+        <section class="recuadro">
+            <h2>2.2 Procedimientos recursivos</h2>
+            <p>Los procedimientos recursivos pueden implementarse en diversos contextos y problemas, como:</p>
+            <ul>
+                <li><strong>Procesamiento de datos estructurados:</strong>
+                    <ul>
+                        <li>Recorridos de árboles: Visitar nodos en preorden, inorden o postorden.</li>
+                        <li>Exploración de grafos: Búsqueda en profundidad (DFS) implementada recursivamente.</li>
+                    </ul>
+                </li>
+                <li><strong>Algoritmos de búsqueda y optimización:</strong>
+                    <ul>
+                        <li>Resolver laberintos con backtracking, explorando caminos y retrocediendo en caso de que una solución no sea válida.</li>
+                        <li>Problemas de combinación, como el cálculo de todas las permutaciones de un conjunto de elementos.</li>
+                    </ul>
+                </li>
+                <li><strong>División y conquista:</strong>
+                    <ul>
+                        <li>Algoritmos como MergeSort dividen un conjunto de datos en mitades, ordenan cada mitad recursivamente y luego las combinan.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Los procedimientos recursivos requieren especial atención en su diseño, ya que un mal manejo puede resultar en ciclos infinitos o errores de desbordamiento de pila (StackOverflow). Esto puede ocurrir si el caso base no está correctamente definido o si los pasos recursivos no convergen.</p>
+        </section>
+        <section class="recuadro">
+            <h2>2.3 Ejemplos de casos recursivos</h2>
+            <ul>
+                <li><strong>Búsqueda binaria:</strong> Este algoritmo divide el rango de búsqueda a la mitad en cada paso, llamándose recursivamente hasta encontrar el elemento o determinar que no existe.
+                    <ul>
+                        <li><strong>Caso base:</strong> El rango de búsqueda se reduce a uno o ningún elemento.</li>
+                        <li><strong>Caso recursivo:</strong> Verificar si el elemento buscado es mayor o menor que el punto medio, y continuar en la mitad correspondiente.</li>
+                    </ul>
+                </li>
+                <li><strong>Resolución de problemas combinatorios:</strong> La recursividad se utiliza en problemas como el cálculo de combinaciones y permutaciones. En el caso de permutaciones, el algoritmo genera todas las posibles disposiciones de un conjunto de elementos al intercambiar recursivamente sus posiciones.</li>
+                <li><strong>Exploración de árboles:</strong> Los recorridos de árboles binarios (preorden, inorden y postorden) son ejemplos clásicos de algoritmos recursivos. Cada nodo se procesa según un orden específico, y la recursión simplifica la navegación por las ramas del árbol.</li>
+                <li><strong>Problemas de optimización:</strong> Algunos problemas como la mochila o el cambio de monedas pueden resolverse recursivamente, generando todas las combinaciones posibles y seleccionando la más óptima.</li>
+            </ul>
+        </section>
+        <section class="recuadro">
+            <h2>Ejemplo</h2>
+            <img src="imagen3.jpg" alt="Ejemplo 1">
+            <img src="imagen4.jpg" alt="Ejemplo 2">
+        </section>
+        <section class="recuadro">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jEfmotrL7jQ?si=nX_U96UkZiN9xuun" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+</body>
+</html>
